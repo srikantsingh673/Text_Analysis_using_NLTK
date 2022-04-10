@@ -14,3 +14,22 @@ Finding FOG index value using Automated Readability Index (ARI).
 Average Number of Words present per Sentence.
 Average Number Syllables in a word.
 Personal Pronoun Count using Tokenizition Method of NLTK.
+
+Requirements:
+(1)pip install nltk
+(2)pip install textstat
+(3)pip install html5lib
+(4)pip install requests
+(5)pip install textblob
+
+For downloading all NLTK Module:
+(1) goto the cmd and type --> 
+    python <
+    import nltk <
+    nltk.download() <
+    
+(2) Dialogbox will appear mark and download all the modules.
+
+Done
+
+    

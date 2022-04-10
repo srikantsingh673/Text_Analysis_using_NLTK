@@ -1,5 +1,4 @@
-''' Text Analysis using NLTK by Rishu
-    Only Public insta Id get Scrapped '''
+''' Text Analysis using NLTK by Rishu '''
 
 from nltk.tokenize import word_tokenize
 import textstat

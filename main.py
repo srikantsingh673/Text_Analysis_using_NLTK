@@ -1,3 +1,6 @@
+''' Text Analysis using NLTK by Rishu
+    Only Public insta Id get Scrapped '''
+
 from nltk.tokenize import word_tokenize
 import textstat
 import re

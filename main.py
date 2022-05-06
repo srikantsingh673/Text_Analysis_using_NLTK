@@ -86,17 +86,55 @@ print("The Avg number of syllables in the word is : ",sylword)
 stop_words = set(stopwords.words('english'))
 tokenized = sent_tokenize(new)
 tags = []
-count = 0
+personal_pronoun = 0
+noun = 0
+adjective = 0
+adverb = 0
+symbols = 0
 for i in tokenized:
-  wordsList = nltk.word_tokenize(i)
-  wordsList = [w for w in wordsList if not w in stop_words] # removing stop words from wordList
-  tagged = nltk.pos_tag(wordsList) # Using a Tagger. Which is part-of-speech
-  for i in tagged:
-    if any('PRP' in word for word in i):
-      tags.append(i)
-      count = count+1
-    else:
-      pass
-print("Number of Personal Pronouns :",count)
+    wordsList = nltk.word_tokenize(i)
+    # removing stop words from wordList
+    wordsList = [w for w in wordsList if not w in stop_words]
+    # Using a Tagger. Which is part-of-speech to find Personal Pronoun.
+    tagged = nltk.pos_tag(wordsList)
+    for i in tagged:
+        if any('PP' in word for word in i):
+            tags.append(i)
+            personal_pronoun = personal_pronoun+1
+        else:
+            pass
+    # Finding Total number of Noun
+    for i in tagged:
+        if any('NN' in word for word in i):
+            tags.append(i)
+            noun = noun+1
+        else:
+            pass
+    # Finding total number of Adjective
+    for i in tagged:
+        if any('JJ' in word for word in i):
+            tags.append(i)
+            adjective = adjective+1
+        else:
+            pass
+    # Finding total number of Adverb
+    for i in tagged:
+        if any('RB' in word for word in i):
+            tags.append(i)
+            adverb = adverb+1
+        else:
+            pass
+    # Finding total number of Symbols
+    for i in tagged:
+        if any('SYM' in word for word in i):
+            tags.append(i)
+            symbols = symbols+1
+        else:
+            pass
+print("Number of Personal Pronouns :", personal_pronoun)
+print("Number of Nouns :", noun)
+print("Number of Adjective :", adjective)
+print("Number of Adverb :", adverb)
+print("Number of Symbols :", symbols)
 print("\n")
 print(new)

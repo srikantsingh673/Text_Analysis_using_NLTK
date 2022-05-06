@@ -1,15 +1,15 @@
 ''' Text Analysis using NLTK by Rishu '''
 
-from nltk.tokenize import word_tokenize
 import textstat
 import nltk
 from bs4 import BeautifulSoup
 import html5lib
 import requests
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from textblob import TextBlob
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
-from textblob import TextBlob
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
 
 url = "https://www.sciencedirect.com/topics/computer-science/food-consumption" #link of webpage
 headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.55'}

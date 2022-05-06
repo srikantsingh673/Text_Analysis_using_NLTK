@@ -21,6 +21,7 @@ Requirements:
 (3)pip install html5lib
 (4)pip install requests
 (5)pip install textblob
+(6)pip install beautifulsoup4
 
 For downloading all NLTK Module:
 (1) goto the cmd and type --> 

@@ -2,7 +2,6 @@
 
 from nltk.tokenize import word_tokenize
 import textstat
-import re
 import nltk
 from bs4 import BeautifulSoup
 import html5lib

@@ -3,7 +3,6 @@
 import textstat
 import nltk
 from bs4 import BeautifulSoup
-import html5lib
 import requests
 from textblob import TextBlob
 from nltk.corpus import stopwords

@@ -1,36 +1,41 @@
-# Text_Analysis_using_NLTK
-Extracting textual data from a website and perform various text Analysis in NLP using NLTK.
+# Text Analysis using NLTK
 
-Web Scrapping using HTML and BeautifulSoup.
-Analysis of extracted text using Natural Language Processing with the help of NLTK.
+This project performs text analysis on web content using various Python libraries including NLTK, TextBlob, and textstat. The analysis aims to understand and extract useful information from the text data, identify common trends, and address data quality issues.
 
-Task Done by this Program :
-Extracting textual data from a website.
-Sentimental Analysis of extracted data, finding Negative, Neutral, and Positive Scores.
-Calculating Polarity and Subjectivity.
-Average Sentence Length.
-Finding the percentage of total complex words present in the data.
-Finding FOG index value using Automated Readability Index (ARI).
-Average Number of Words present per Sentence.
-Average Number Syllables in a word.
-Personal Pronoun Count using Tokenizition Method of NLTK.
+## Project Overview
 
-Requirements:
-(1)pip install nltk
-(2)pip install textstat
-(3)pip install html5lib
-(4)pip install requests
-(5)pip install textblob
-(6)pip install beautifulsoup4
+The script performs the following tasks:
+- **Web Scraping**: Retrieves text content from a specified webpage.
+- **Sentiment Analysis**: Calculates sentiment scores using VADER and TextBlob.
+- **Text Statistics**: Computes various text statistics including average sentence length, percentage of complex words, and readability indices.
+- **Text Features**: Analyzes the frequency of personal pronouns, nouns, adjectives, adverbs, and symbols.
 
-For downloading all NLTK Module:
-(1) goto the cmd and type --> 
-    python <
-    import nltk <
-    nltk.download() <
-    
-(2) Dialogbox will appear mark and download all the modules.
+## Key Features
 
-Done
+1. **Sentiment Analysis**:
+   - Uses VADER to calculate negative, neutral, and positive sentiment scores.
+   - Uses TextBlob to determine polarity and subjectivity.
 
-    
+2. **Text Statistics**:
+   - Calculates average sentence length.
+   - Computes the percentage of complex words.
+   - Measures readability using the Automated Readability Index (ARI).
+   - Calculates the average number of syllables per word.
+
+3. **Text Features Analysis**:
+   - Counts occurrences of personal pronouns, nouns, adjectives, adverbs, and symbols.
+
+## Requirements
+
+Ensure you have the following Python libraries installed:
+
+- `textstat`
+- `nltk`
+- `beautifulsoup4`
+- `requests`
+- `textblob`
+
+You can install the required libraries using pip:
+
+```bash
+pip install textstat nltk beautifulsoup4 requests textblob
